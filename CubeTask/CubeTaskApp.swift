@@ -2,7 +2,7 @@
 //  CubeTaskApp.swift
 //  CubeTask
 //
-//  Created by erge on 21.10.2022.
+//  Created by erge on 22.10.2022.
 //
 
 import SwiftUI

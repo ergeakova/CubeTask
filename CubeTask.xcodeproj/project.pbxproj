@@ -10,7 +10,9 @@
 		3C4F0E482902BE7F00938E88 /* CubeTaskApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4F0E472902BE7F00938E88 /* CubeTaskApp.swift */; };
 		3C4F0E4A2902BE7F00938E88 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4F0E492902BE7F00938E88 /* ContentView.swift */; };
 		3C4F0E4C2902BE8000938E88 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C4F0E4B2902BE8000938E88 /* Assets.xcassets */; };
-		3C4F0E4F2902BE8000938E88 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C4F0E4E2902BE8000938E88 /* Preview Assets.xcassets */; };
+		3C4F0E572902BEF900938E88 /* CubeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4F0E562902BEF900938E88 /* CubeView.swift */; };
+		3C4F0E592902DF8E00938E88 /* CubeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C4F0E582902DF8E00938E88 /* CubeModel.swift */; };
+		3CDC58922903384100E3E83D /* CubeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CDC58912903384100E3E83D /* CubeService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -18,7 +20,9 @@
 		3C4F0E472902BE7F00938E88 /* CubeTaskApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeTaskApp.swift; sourceTree = "<group>"; };
 		3C4F0E492902BE7F00938E88 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		3C4F0E4B2902BE8000938E88 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3C4F0E4E2902BE8000938E88 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		3C4F0E562902BEF900938E88 /* CubeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeView.swift; sourceTree = "<group>"; };
+		3C4F0E582902DF8E00938E88 /* CubeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeModel.swift; sourceTree = "<group>"; };
+		3CDC58912903384100E3E83D /* CubeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,18 +57,36 @@
 			children = (
 				3C4F0E472902BE7F00938E88 /* CubeTaskApp.swift */,
 				3C4F0E492902BE7F00938E88 /* ContentView.swift */,
+				3CDC58932903486200E3E83D /* Model */,
+				3CDC58942903488E00E3E83D /* Service */,
+				3CDC5895290348A900E3E83D /* View */,
 				3C4F0E4B2902BE8000938E88 /* Assets.xcassets */,
-				3C4F0E4D2902BE8000938E88 /* Preview Content */,
 			);
 			path = CubeTask;
 			sourceTree = "<group>";
 		};
-		3C4F0E4D2902BE8000938E88 /* Preview Content */ = {
+		3CDC58932903486200E3E83D /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				3C4F0E4E2902BE8000938E88 /* Preview Assets.xcassets */,
+				3C4F0E582902DF8E00938E88 /* CubeModel.swift */,
 			);
-			path = "Preview Content";
+			path = Model;
+			sourceTree = "<group>";
+		};
+		3CDC58942903488E00E3E83D /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				3CDC58912903384100E3E83D /* CubeService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		3CDC5895290348A900E3E83D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3C4F0E562902BEF900938E88 /* CubeView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +147,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3C4F0E4F2902BE8000938E88 /* Preview Assets.xcassets in Resources */,
 				3C4F0E4C2902BE8000938E88 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -139,6 +160,9 @@
 			files = (
 				3C4F0E4A2902BE7F00938E88 /* ContentView.swift in Sources */,
 				3C4F0E482902BE7F00938E88 /* CubeTaskApp.swift in Sources */,
+				3CDC58922903384100E3E83D /* CubeService.swift in Sources */,
+				3C4F0E592902DF8E00938E88 /* CubeModel.swift in Sources */,
+				3C4F0E572902BEF900938E88 /* CubeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +290,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CubeTask/Preview Content\"";
 				DEVELOPMENT_TEAM = 56Q2KV568Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
@@ -295,7 +318,6 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"CubeTask/Preview Content\"";
 				DEVELOPMENT_TEAM = 56Q2KV568Z;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
